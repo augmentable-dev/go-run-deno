@@ -11,7 +11,6 @@ This proof-of-concept extends that by essentially turning `deno run https://...`
 ## How
 
 The source in `main.go` should be fairly straightforward, only `stdlib` packages are used.
-Set `HTTP_PORT` to change what port to listen on, if you're running the binary directly.
 A `Dockerfile` is also included, you can build and run it like so:
 
 ```
@@ -25,4 +24,5 @@ It's equivalent to calling `deno run https://...`.
 
 ```
 curl localhost:8000 -H "content-type: application/json" -d '{"location": "https://deno.land/std/examples/welcome.ts"}'
+Welcome to Deno 🦕
 ```
